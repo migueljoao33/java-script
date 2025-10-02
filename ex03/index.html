@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom events</title>
+    <style>
+        .area {
+            font: normal 15pt Arial;
+            background-color: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;   
+        }
+    </style>
+</head>
+<body>
+    <div id="area" class="area" onclick="click()" onmouseenter="entermouse()" onmouseout="outmouse()">
+        interactive...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', click)
+        a.addEventListener('mouseenter', entermouse)
+        a.addEventListener('mouseout', outmouse)
+
+        function click() {
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+        
+        function entermouse() {
+            a.innerText = 'entrou!'
+            a.style.background = 'green'
+        }
+
+        function outmouse() {
+            a.innerText = 'saiu!'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
