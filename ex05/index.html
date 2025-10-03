@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>detran</title>
+</head>
+<body>
+    <div id="div01">
+        <h1>dmv test</h1>
+        <input type="number" name="txt01" id="txt01">
+        <input type="button" value="enviar" onclick="clique()">
+    </div>
+    <div id="div02">
+        text result
+    </div>
+    <script>
+        function clique() {
+        var txtv = document.getElementById('txt01')
+        var div = document.getElementById('div02')
+        var vel = Number(txtv.value)
+        div.innerText = 'sua velocidade atual é de ' + vel
+            if (vel > 60) {
+                div.innerText = 'multado'
+            } else {
+                div.innerText = 'pode passar'
+            }
+        }
+    </script>
+</body>
+</html>
