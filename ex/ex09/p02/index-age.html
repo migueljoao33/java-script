@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day hour</title>
+    <style>
+        body {
+            background-color: rgb(5, 128, 210);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-flow: column wrap;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-flow: column wrap;
+            margin: auto;
+            margin: auto auto 20px auto;
+            border-radius: 15px;
+            height: 100%;
+            width: 440px;
+            color: black;
+            background-color: white;
+            box-shadow: 5px 5px 10px rgba(49, 49, 49, 0.464);
+        }
+
+        section:hover {
+            animation: bounce 1.6s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        input {
+            margin-top: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            margin: 10px 10px auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>day hour</h1>
+        </header>
+        <section>
+            <div>
+                <p>
+                    <label for="dn">birthday</label>
+                    <input type="number" name="dn" id="dn"> <br>
+                </p>
+                <p>
+                    gender:
+                    <label for="m">man</label>
+                    <input type="radio" name="radgender" id="m" checked>
+                    <label for="w">woman</label>
+                    <input type="radio" name="radgender" id="w">
+                </p><br>
+                <input type="button" value="verify" onclick="verify()">
+            </div>
+            <div id="res">
+                answer these data and see the result!!
+            </div>
+            <div>
+                <img id="photo" src="" alt="">
+            </div>
+        </section>
+        <footer><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">@CursoemVídeo</a></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

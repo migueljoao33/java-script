@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day hour</title>
+    <style>
+        body {
+            background-color: rgba(205, 205, 100);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+        }
+
+        section {
+            margin: auto;
+            margin: auto auto 20px auto;
+            border-radius: 15px;
+            height: 210px;
+            width: 475px;
+            color: black;
+            background-color: white;
+            box-shadow: 5px 5px 10px rgba(49, 49, 49, 0.464);
+        }
+
+        section:hover {
+            animation: bounce 1.7s infinite ease-in-out;
+        }
+
+        img {
+            margin-top: 12px;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }   
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body onload="load()">
+    <main>
+        <header>
+            <h1>day hour</h1>
+        </header>
+        <section>
+            <div id="msg">
+                
+            </div>
+            <div id="img">
+                
+            </div>
+        </section>
+        <footer>@CursoemVídeo</footer>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
