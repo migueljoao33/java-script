@@ -11,6 +11,10 @@
             color: white;
         }
 
+        div {
+            text-align: center;
+        }
+
         main {
             display: flex;
             flex-flow: column nowrap;
@@ -21,8 +25,8 @@
             margin: auto;
             margin: auto auto 20px auto;
             border-radius: 15px;
-            height: 240px;
-            width: 440px;
+            height: 210px;
+            width: 475px;
             color: black;
             background-color: white;
             box-shadow: 5px 5px 10px rgba(49, 49, 49, 0.464);
@@ -30,6 +34,10 @@
 
         section:hover {
             animation: bounce 1.7s infinite ease-in-out;
+        }
+
+        img {
+            margin-top: 12px;
         }
 
         @keyframes bounce {
@@ -41,23 +49,19 @@
                 transform: translateY(-5px);
             }
         }
-
-        img {
-            border-radius: 100px;
-        }
     </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <header>
             <h1>day hour</h1>
         </header>
         <section>
-            <div id="div01">
+            <div id="msg">
                 
             </div>
-            <div id="div02">
-                <img src="Purple Petal Flower.jpg" alt="img">
+            <div id="img">
+                
             </div>
         </section>
         <footer>@CursoemVídeo</footer>

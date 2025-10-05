@@ -13,15 +13,17 @@
 
         main {
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: column wrap;
             text-align: center;
         }
 
         section {
+            display: flex;
+            flex-flow: column wrap;
             margin: auto;
             margin: auto auto 20px auto;
             border-radius: 15px;
-            height: 240px;
+            height: 100%;
             width: 440px;
             color: black;
             background-color: white;
@@ -45,6 +47,19 @@
         input {
             margin-top: 20px;
         }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            margin: 10px 10px auto 10px;
+        }
     </style>
 </head>
 <body>
@@ -54,19 +69,28 @@
         </header>
         <section>
             <div>
-                <label for="dn">birthday</label>
-                <input type="number" name="dn" id="dn"> <br>
-                <!--              ?                 --> <br>
-                <input type="button" value="verify">
+                <p>
+                    <label for="dn">birthday</label>
+                    <input type="number" name="dn" id="dn"> <br>
+                </p>
+                <p>
+                    gender:
+                    <label for="m">man</label>
+                    <input type="radio" name="radgender" id="m" checked>
+                    <label for="w">woman</label>
+                    <input type="radio" name="radgender" id="w">
+                </p><br>
+                <input type="button" value="verify" onclick="verify()">
+            </div>
+            <div id="res">
+                answer these data and see the result!!
             </div>
             <div>
-                
+                <img id="photo" src="" alt="">
             </div>
-            <p>
-                preencha os dados acima para ver o resultado!
-            </p>
         </section>
-        <footer>@CursoemVídeo</footer>
+        <footer><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">@CursoemVídeo</a></footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
