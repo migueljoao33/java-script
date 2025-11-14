@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tempo</title>
+    <style>
+        body {
+            background: rgba(37, 36, 36, 0.871);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            padding: 30px;
+            color: white;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .start {
+            background: rgb(89, 210, 89);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .stop {
+            background: red;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>controle de tempo</h1>
+    <h2 id="tempo">10</h2>
+    <div class="container">
+        <div>
+            <button onclick="ativarContagem()" class="start">Ativar contagem</button>
+            <button onclick="pararContagem()" class="stop">Parar contagem</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
